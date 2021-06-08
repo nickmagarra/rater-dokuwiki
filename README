@@ -1,6 +1,8 @@
-Fork of https://github.com/Taggic/rater.git
+# Fork of https://github.com/Taggic/rater.git
 
-1. Added compatiblity with Hogfather
-2. After voting there no more redirects to new page
-3. Removed braces around counters
-4. Counters now bold
+  - Added compatiblity with ***Hogfather***
+  - After voting there no more redirects to new page
+  - Removed braces around counters
+  - Counters now bold
+  
+  ## Big thanks to **alex-alex-o**
