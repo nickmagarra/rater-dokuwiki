@@ -10,13 +10,13 @@ $(document).ready(function() {
 		var $ammount, $total ;
 
 		$ammount = $($tag).parent().find('#'+$selector).text();
-		$ammount_substr =  $ammount.substring(1,$ammount.length-1);
-		if(isNaN($ammount_substr) | ($ammount_substr.length)==0)
+		//$ammount_substr =  $ammount.substring(1,$ammount.length-1);
+		$ammount_substr = $ammount; 
+		if(isNaN(parseInt($ammount_substr)))
 			$ammount_substr = 0;
-
 		$total = parseInt($ammount_substr) +1;
 
-		$($tag).parent().find('#'+$selector).text('('+$total+')');
+		$($tag).parent().find('#'+$selector).text($total);
 	}
 
 	$( "a."+$c_positive+", a."+$c_negative ).click(function( event ) {
