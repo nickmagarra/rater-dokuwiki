@@ -124,3 +124,5 @@
   border: none !important;
   text-align: center;
 }
+
+#vote1_1, #vote1_2 {font-weight: bold;}

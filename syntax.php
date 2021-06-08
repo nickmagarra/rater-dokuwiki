@@ -23,6 +23,10 @@ class syntax_plugin_rater extends DokuWiki_Syntax_Plugin
     function getPType(){ return 'block';}
     function getSort(){ return 168;}
     
+    function __construct(){
+        echo '<script type="text/javascript" src="'.DOKU_URL.'lib/plugins/rater/scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="'.DOKU_URL.'lib/plugins/rater/scripts/jquery.clicker.js"></script>';
+    }
 /******************************************************************************/
 /* Connect pattern to lexer
 */
