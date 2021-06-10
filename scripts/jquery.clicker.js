@@ -39,9 +39,10 @@ $(document).ready(function() {
 		        }	
 		        	console.log(status);
 		        	console.log(data);
+                                alert(data.err_txt);
 		    },
 		    error: function (jqXhr, textStatus, errorMessage) { // error callback 
-		        alert('Error: ' + errorMessage);
+		        console.log('Error: ' + errorMessage);
 		    }
 		});
 		
