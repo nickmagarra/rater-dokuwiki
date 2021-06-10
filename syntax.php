@@ -400,9 +400,9 @@ class syntax_plugin_rater extends DokuWiki_Syntax_Plugin
                         <div style="display:table-cell; text-align:left;">';
                         
               $ret .= $addMSG.'<a class="thumbup tup" href="doku.php?id='.$ID.'&do=rate_voteup&rater_id='.$rater_id.'&rater_ip='.$rater_ip.'&rater_end='.$data['rater_end'].'&anker='.$anker_id.'&rater_name='.$rater_name.'"></a>'.
-                   '<span id="vote1_1" style="color:#5b8f22">'.$vote1.'&nbsp;</span>'.
+                   '<span id="vote1_1" style="color:#5b8f22; opacity:0.0">'.$vote1.'&nbsp;</span>'.
                    '<a class="thumbdown tdn" href="doku.php?id='.$ID.'&do=rate_votedown&rater_id='.$rater_id.'&rater_ip='.$rater_ip.'&rater_end='.$data['rater_end'].'&anker='.$anker_id.'&rater_name='.$rater_name.'"></a>'.
-                   '<span id="vote1_2" style="color:#FF1822">'.$vote2.'</span>';
+                   '<span id="vote1_2" style="color:#FF1822; opacity:0.0">'.$vote2.'</span>';
               if($data['rater_tracedetails']==='1') {
                     $ret .= '<a href="#'.$anker_id.'" onclick="hidden'.$rater_id.'()">(Details)</a><br />'.
                          '<div style="display : none" id="details_'.$rater_id.'">'.$ret_details.'</div></div></div></td></tr>';
